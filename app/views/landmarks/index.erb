@@ -1,8 +1,12 @@
 <h1>Landmarks</h1>
+<table>
+  <th>Name</th>
+  <th>Year Completed</th>
 
-<ul>
+<tr>
   <% Landmark.all.each do |landmark| %>
-    <li><%= landmark.name %></li>
-    <li>Completed in <%= landmark.year_completed %></li><br>
+    <td><%= landmark.name %></td>
+    <td>Completed in <%= landmark.year_completed %></td><br>
   <% end %>
-</ul>
+</tr>
+</table>
